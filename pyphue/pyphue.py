@@ -80,7 +80,7 @@ class PyPHue:
     # Hue:        0 - 65535
 
     # Returns the power state (True/False) of specified light
-    def getBrightness(self, lightID):
+    def getOnOff(self, lightID):
         response = self.getLight(lightID)
         return response['json']['state']['on']
 
